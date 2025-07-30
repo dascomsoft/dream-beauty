@@ -1,7 +1,13 @@
 import WhatsAppButton from '../components/WhatsAppButton';
 import React from 'react';
+import { useEffect } from 'react';
 
 const Services = () => {
+      useEffect(() => {
+      // Faire défiler vers le haut au chargement de la page
+      window.scrollTo(0, 0);
+    }, []);
+
   const services = [
     {
       category: "Soins Visage",

@@ -1,7 +1,14 @@
 import WhatsAppButton from '../components/WhatsAppButton';
 import React from 'react';
+import { useEffect } from 'react';
 
 const About = () => {
+
+      useEffect(() => {
+      // Faire défiler vers le haut au chargement de la page
+      window.scrollTo(0, 0);
+    }, []);
+
   const handleWhatsApp = () => {
     window.open('https://wa.me/237670310388?text=Bonjour%20Dream%20Beauty%20Spa%20!%20Je%20souhaite%20en%20savoir%20plus%20sur%20votre%20salon%20✨', '_blank');
   };

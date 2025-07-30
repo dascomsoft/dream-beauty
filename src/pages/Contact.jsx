@@ -1,8 +1,14 @@
 import { FiPhone, FiMapPin, FiClock, FiMail, FiInstagram, FiFacebook } from 'react-icons/fi';
 import WhatsAppButton from '../components/WhatsAppButton';
 import React from 'react';
+import { useEffect } from 'react';
 
 const Contact = () => {
+      useEffect(() => {
+      // Faire défiler vers le haut au chargement de la page
+      window.scrollTo(0, 0);
+    }, []);
+
   const handleWhatsApp = () => {
     window.open('https://wa.me/237670310388?text=Bonjour%20Dream%20Beauty%20Spa%20!%20Je%20souhaite%20réserver%20un%20soin%20✨', '_blank');
   };

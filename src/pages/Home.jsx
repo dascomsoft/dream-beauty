@@ -3,11 +3,17 @@ import PacksSection from '../components/PacksSection';
 import WhatsAppButton from '../components/WhatsAppButton';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import { useEffect } from 'react';
 
 
 
 const Home = () => {
+
+      useEffect(() => {
+      // Faire défiler vers le haut au chargement de la page
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className="min-h-screen">
       <HeroSlider />
