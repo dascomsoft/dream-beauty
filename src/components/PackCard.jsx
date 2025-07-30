@@ -23,7 +23,7 @@ const PackCard = ({ name, price, services, isPopular = false, whatsappMessage })
       
       <div className="p-6 text-center pb-4">
         <div className="mb-4">
-          <MdSpa className="h-12 w-12 text-primary mx-auto animate-bounce" />
+          <MdSpa className="h-12 w-12 text-pink-400 mx-auto animate-bounce" />
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
           {name}
