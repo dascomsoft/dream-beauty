@@ -7,10 +7,10 @@ const PacksSection = () => {
       name: "Pack Complet Premium",
       price: "15 000 F",
       services: [
-        "Hammam 1",
         "Pose vernis gel main",
         "Pédicure chaude",
         "Manucure complète",
+        "Hammam relaxant",
         "Savon noir purifiant",
         "Gommage corporel",
         "Soin visage complet",
@@ -24,7 +24,7 @@ const PacksSection = () => {
       name: "Pack Beauté Essentiel",
       price: "10 000 F",
       services: [
-        "Hammam 2",
+        "Hammam relaxant",
         "Savon noir purifiant",
         "Gommage éclaircissant",
         "Luminothérapie",
@@ -38,7 +38,7 @@ const PacksSection = () => {
       name: "Pack Éclat & Bien-être",
       price: "8 500 F",
       services: [
-        "Hammam 3",
+        "Hammam double session",
         "Savon noir purifiant",
         "Gommage relaxant",
         "Soin visage personnalisé",
@@ -51,7 +51,7 @@ const PacksSection = () => {
       name: "Pack Détente",
       price: "5 000 F",
       services: [
-        "Hammam 4",
+        "Hammam double session",
         "Savon noir purifiant",
         "Gommage corporel",
         "Soin visage relaxant"
