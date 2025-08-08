@@ -181,10 +181,10 @@ const Home = () => {
                 Nous utilisons exclusivement des produits bio certifiés, sans parabènes ni ingrédients nocifs...
               </p>
               <div className="flex space-x-4">
-                <a href="#packs" className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full font-semibold transition">
-                  Découvrir nos packs
+                <a href="/services" className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full font-semibold transition">
+                  Découvrir nos services
                 </a>
-                <a href="#contact" className="border-2 border-rose-600 text-rose-600 px-6 py-2 rounded-full font-semibold hover:bg-rose-600 hover:text-white transition">
+                <a href="/contact" className="border-2 border-rose-600 text-rose-600 px-10 py-2 rounded-full font-semibold hover:bg-rose-600 hover:text-white transition">
                   Nous contacter
                 </a>
               </div>

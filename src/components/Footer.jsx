@@ -13,7 +13,12 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <MdSpa className="h-8 w-8 text-primary" />
+              {/* <MdSpa className="h-8 w-8 text-primary" /> */}
+                   <img
+                src='dreamlogo.jpeg'
+                alt='dream logo'
+                className="w-15 h-15 rounded-full"
+              />
               <span className="text-2xl font-bold">Dream Beauty & Spa</span>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">
@@ -34,12 +39,6 @@ const Footer = () => {
                 className="bg-[#1877F2] p-3 rounded-full hover:bg-[#166FE5] transition-colors"
               >
                 <FaFacebook className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="#" 
-                className="bg-gradient-to-r from-[#405DE6] to-[#E1306C] p-3 rounded-full hover:opacity-80 transition-opacity"
-              >
-                <FaInstagram className="h-5 w-5 text-white" />
               </a>
             </div>
           </div>

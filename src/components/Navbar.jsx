@@ -43,9 +43,9 @@ const Navbar = () => {
                <img
                 src='dreamlogo.jpeg'
                 alt='dream logo'
-                className="w-18 h-18 rounded-full"
+                className="w-15 h-15 rounded-full"
               />
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="text-lg font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
               Dream Beauty & Spa
             </span>
           </Link>
