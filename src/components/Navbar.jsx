@@ -39,7 +39,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <MdSpa className="h-8 w-8 text-pink-500" />
+            {/* <MdSpa className="h-8 w-8 text-pink-500" /> */}
+               <img
+                src='dreamlogo.jpeg'
+                alt='dream logo'
+                className="w-18 h-18 rounded-full"
+              />
             <span className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
               Dream Beauty & Spa
             </span>

@@ -65,22 +65,6 @@ const Home = () => {
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {/* Pourquoi choisir Dream Beauty */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
@@ -230,28 +214,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
       <PacksSection />
     </div>
   );

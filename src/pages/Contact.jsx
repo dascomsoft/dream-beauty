@@ -47,7 +47,7 @@ Merci ! ✨`;
     {
       icon: FiClock,
       title: "Horaires",
-      value: "Lun-Sam: 8h-19h, Dim: 10h-17h",
+      value: "Lun-Sam: 8h30min-20h, Dim: 10h00-19h",
       action: null
     },
     {

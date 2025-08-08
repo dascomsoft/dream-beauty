@@ -89,7 +89,7 @@ const HeroSlider = () => {
             
             <Link to="/services">
               <button
-                className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300 text-lg px-8 py-4 rounded-lg font-medium flex items-center justify-center"
+                className="border-2 border-white bg-amber-400 text-white hover:bg-white hover:text-black transition-all duration-300 text-lg px-8 py-4 rounded-lg font-medium flex items-center justify-center"
               >
                 Découvrir nos Services
                 <FiArrowRight className="ml-2 h-5 w-5" />

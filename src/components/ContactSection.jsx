@@ -18,7 +18,7 @@ const ContactSection = () => {
     {
       icon: FiClock,
       title: "Horaires",
-      details: ["Lundi - Samedi: 8h - 20h", "Dimanche: 10h - 18h"]
+      details: ["Lundi - Samedi: 8h30min - 20h", "Dimanche: 10h - 19h"]
     }
   ];
 
