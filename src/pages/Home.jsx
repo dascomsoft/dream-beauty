@@ -1,6 +1,4 @@
 import HeroSlider from '../components/HeroSlider';
-import PacksSection from '../components/PacksSection';
-import WhatsAppButton from '../components/WhatsAppButton';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useEffect } from 'react';
@@ -9,10 +7,99 @@ import { useEffect } from 'react';
 
 const Home = () => {
 
-      useEffect(() => {
-      // Faire défiler vers le haut au chargement de la page
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    // Faire défiler vers le haut au chargement de la page
+    window.scrollTo(0, 0);
+  }, []);
+
+
+
+
+  const packsData = [
+    {
+      title: "Pack Éclat Total",
+      price: "15,000 F",
+      color: "from-pink-500 to-pink-400",
+      textColor: "text-pink-500",
+      features: [
+
+        "Hammam 1",
+        "Pose vernis gel main",
+        "Pédicure chaude",
+        "Manucure complète",
+        "Savon noir",
+        "Gommage",
+        "Soin visage complet",
+      ],
+      link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%201%20à%2015000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
+    },
+    {
+      title: "Pack Détente Pure",
+      price: "10,000 F",
+      color: "from-amber-500 to-amber-400",
+      textColor: "text-amber-500",
+      features: [
+        "Hammam 2",
+        "Savon noir",
+        "Gommage éclaircissant",
+        "Luminothérapie",
+        "Soin visage",
+        "Dermaplaning",
+        "Pédicure complète",
+      ],
+      link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%202%20à%2010000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
+    },
+    {
+      title: "Pack Relaxation",
+      price: "8,500 F",
+      color: "from-purple-500 to-purple-400",
+      textColor: "text-purple-500",
+      features: [
+        "Hammam 3",
+        "Savon noir",
+        "Gommage",
+        "Soin visage",
+        "Dermaplaning",
+        "Luminothérapie",
+      ],
+      link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%203%20à%208500%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
+    },
+    {
+      title: "Pack Découverte",
+      price: "5,000 F",
+      color: "from-blue-500 to-blue-400",
+      textColor: "text-blue-500",
+      features: ["Hammam 4", "Savon noir", "Gommage", "Soin visage"],
+      link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%204%20à%205000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
+    },
+    {
+      title: "Pack Visage & Pieds",
+      price: "5,000 F",
+      color: "from-teal-500 to-teal-400",
+      textColor: "text-teal-500",
+      features: [
+        "Soin visage complet",
+        "Dermaplaning",
+        "Pédicure",
+        "Modelage pieds",
+        "Vernis gel pieds",
+      ],
+      link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%205%20à%205000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
+    },
+  ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="min-h-screen">
@@ -24,13 +111,13 @@ const Home = () => {
               Bienvenue chez Dream Beauty & Spa
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Découvrez un havre de paix où votre beauté naturelle est sublimée par nos soins d'exception. 
-              Notre équipe de professionnels vous accueille dans un cadre luxueux et apaisant pour une 
+              Découvrez un havre de paix où votre beauté naturelle est sublimée par nos soins d'exception.
+              Notre équipe de professionnels vous accueille dans un cadre luxueux et apaisant pour une
               expérience unique de bien-être et de beauté.
             </p>
           </div>
 
-          
+
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="text-center p-6 bg-background rounded-lg shadow-elegant shadow-lg">
               <div className="w-16 h-16 bg-gradient-spa rounded-full flex items-center justify-center mx-auto mb-4">
@@ -41,7 +128,7 @@ const Home = () => {
                 Des soins de qualité premium avec les meilleures techniques de beauté
               </p>
             </div>
-            
+
             <div className="text-center p-6 bg-background rounded-lg shadow-elegant shadow-lg">
               <div className="w-16 h-16 bg-gradient-spa rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💆‍♀️</span>
@@ -51,7 +138,7 @@ const Home = () => {
                 Un environnement serein conçu pour votre relaxation totale
               </p>
             </div>
-            
+
             <div className="text-center p-6 bg-background rounded-lg shadow-elegant shadow-lg">
               <div className="w-16 h-16 bg-gradient-spa rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">👑</span>
@@ -65,7 +152,7 @@ const Home = () => {
         </div>
       </section>
 
-  {/* Pourquoi choisir Dream Beauty */}
+      {/* Pourquoi choisir Dream Beauty */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-rose-800 mb-12">
@@ -182,10 +269,10 @@ const Home = () => {
               </p>
               <div className="flex space-x-4">
                 <a href="/services" className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full font-semibold transition">
-                  Découvrir nos services
+                  Nos services
                 </a>
                 <a href="/contact" className="border-2 border-rose-600 text-rose-600 px-10 py-2 rounded-full font-semibold hover:bg-rose-600 hover:text-white transition">
-                  Nous contacter
+                  Nous joindre
                 </a>
               </div>
             </div>
@@ -214,7 +301,73 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <PacksSection />
+      <section id="packs" className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-pink-600 mb-16">
+            Nos Packs Beauté
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {packsData.map((pack, index) => (
+              <div
+                key={index}
+                className="pack-card bg-white rounded-xl shadow-lg overflow-hidden transition"
+              >
+                {/* Header */}
+                <div
+                  className={`bg-gradient-to-r ${pack.color} p-6 text-center text-white`}
+                >
+                  <h3 className="text-2xl font-bold">{pack.title}</h3>
+                  <p className="text-xl mt-2">{pack.price}</p>
+                </div>
+
+                {/* Features */}
+                <div className="p-6">
+                  <ul className="space-y-3">
+                    {pack.features.map((feature, i) => (
+                      <li key={i} className="flex items-center">
+                        <i className={`fas fa-check ${pack.textColor} mr-2`}></i>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Button */}
+                  <a
+                    href={pack.link}
+                    className={`block mt-6 ${pack.textColor.replace(
+                      "text-",
+                      "bg-"
+                    )} hover:${pack.textColor.replace(
+                      "text-",
+                      "bg-"
+                    )}-600 text-white text-center py-3 px-6 rounded-lg transition`}
+                  >
+                    <i className="fab fa-whatsapp mr-2"></i> Réserver ce pack
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Prêt(e) pour votre transformation beauté ?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Réservez dès maintenant votre soin et découvrez l'expérience Dream Beauty & Spa
+          </p>
+          <button
+            onClick={() => handleWhatsApp("consultation personnalisée")}
+            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 text-lg px-8 py-4 text-white rounded-md font-medium"
+          >
+            Consultation Gratuite
+          </button>
+        </div>
+      </section>
     </div>
   );
 };

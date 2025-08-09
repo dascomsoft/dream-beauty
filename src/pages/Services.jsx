@@ -1,144 +1,173 @@
-import WhatsAppButton from '../components/WhatsAppButton';
+
+
+
+
+
 import React from 'react';
+
+import { FaWhatsapp } from 'react-icons/fa';
 import { useEffect } from 'react';
 
-const Services = () => {
-      useEffect(() => {
+
+
+
+
+const ServicesPage = () => {
+
+
+    useEffect(() => {
       // Faire défiler vers le haut au chargement de la page
       window.scrollTo(0, 0);
     }, []);
 
+
+
+
   const services = [
     {
-      category: "Soins Visage",
-      description: "Révélez l'éclat naturel de votre peau",
-      treatments: [
-        { name: "Soin visage complet", description: "Nettoyage, gommage, masque et hydratation", price: "À partir de 8 000 F" },
-        { name: "Dermaplaning", description: "Exfoliation douce pour une peau lisse", price: "Inclus dans nos packs" },
-        { name: "Luminothérapie LED", description: "Traitement anti-âge par la lumière", price: "Inclus dans nos packs" },
-        { name: "Gommage éclaircissant", description: "Pour un teint uniforme et lumineux", price: "Inclus dans nos packs" }
-      ]
+      id: 1,
+      title: "Massages Relaxants",
+      description: "Détendez-vous avec nos massages professionnels aux huiles essentielles premium. Laissez nos thérapeutes expérimentés dissiper votre stress.",
+      image: "hero.jpg",
+      alt: "Massage relaxant dans un spa luxueux"
     },
     {
-      category: "Soins Corps",
-      description: "Détendez-vous avec nos rituels bien-être",
-      treatments: [
-        { name: "Hammam traditionnel", description: "Purification et relaxation profonde", price: "Inclus dans nos packs" },
-        { name: "Gommage au savon noir", description: "Exfoliation traditionnelle orientale", price: "Inclus dans nos packs" },
-        { name: "Modelage relaxant", description: "Massage détente corps entier", price: "Sur demande" },
-        { name: "Enveloppement corporel", description: "Hydratation intense de la peau", price: "Sur demande" }
-      ]
+      id: 2,
+      title: "Tresses & Coiffures Femmes",
+      description: "Transformez votre look avec nos créations capillaires sur mesure. Des tresses africaines aux coupes tendance, notre styliste vous conseille.",
+      image: "coiffure.jpg",
+      alt: "Coiffure élégante pour femme"
     },
     {
-      category: "Soins Mains & Pieds",
-      description: "Prenez soin de vos extrémités",
-      treatments: [
-        { name: "Manucure complète", description: "Soin des ongles et des cuticules", price: "Inclus dans nos packs" },
-        { name: "Pédicure chaude", description: "Soin relaxant des pieds", price: "Inclus dans nos packs" },
-        { name: "Pose vernis gel", description: "Manucure longue durée", price: "Inclus Pack 1" },
-        { name: "Modelage des pieds", description: "Massage relaxant et hydratant", price: "Inclus Pack 5" }
-      ]
+      id: 3,
+      title: "Onglerie Artistique",
+      description: "Des mains parfaitement manucurées avec nos techniques de nail art exclusives. Vernis semi-permanent, capsules ou french élégant.",
+      image: "ong2.jpeg",
+      alt: "Ongles artistiquement décorés"
     },
     {
-      category: "Rituels Spa",
-      description: "Expériences complètes de bien-être",
-      treatments: [
-        { name: "Rituel Détox", description: "Purification complète corps et visage", price: "Pack 3 - 8 500 F" },
-        { name: "Rituel Anti-âge", description: "Soins ciblés jeunesse", price: "Pack 2 - 10 000 F" },
-        { name: "Rituel Royal", description: "L'expérience spa ultime", price: "Pack 1 - 15 000 F" },
-        { name: "Rituel Express", description: "Bien-être rapide et efficace", price: "Pack 4 - 5 000 F" }
-      ]
+      id: 4,
+      title: "Hammam & Gommage Corporel",
+      description: "Purifiez votre peau avec notre rituel de hammam traditionnel suivi d'un gommage enveloppant aux produits naturels pour une peau de bébé.",
+      image: "gommage.jpg",
+      alt: "Espace hammam luxueux"
+    },
+    {
+      id: 5,
+      title: "Extensions de Cils",
+      description: "Un regard intense et naturel avec nos extensions de cils premium, posées une à une par notre experte certifiée. Effet wow garanti.",
+      image: "cils4.jpg",
+      alt: "Extensions de cils parfaites"
+    },
+    {
+      id: 6,
+      title: "Micro-pigmentation",
+      description: "Correction ou embellissement des sourcils, lèvres ou contour des yeux par notre spécialiste en dermopigmentation médicale.",
+      image: "visage.jpeg",
+      alt: "Micro-pigmentation de précision"
+    },
+    {
+      id: 7,
+      title: "Soins de Visage",
+      description: "Rituels de soins personnalisés avec des produits de luxe pour une peau éclatante. Diagnostic peau et protocole sur mesure.",
+      image: "soins.jpeg",
+      alt: "Soin du visage haut de gamme"
+    },
+    {
+      id: 8,
+      title: "Coiffure Homme",
+      description: "Salon dédié aux hommes avec coupe barbe et soins capillaires premium. Des produits masculins haut de gamme pour un style impeccable.",
+      image: "mencut.jpg",
+      alt: "Coiffure élégante pour homme"
+    },
+    {
+      id: 9,
+      title: "Cosmétiques",
+      description: "Boutique exclusive de produits de beauté soigneusement sélectionnés. Des marques prestigieuses pour prolonger l'expérience spa à domicile.",
+      image: "product.jpg",
+      alt: "Produits cosmétiques de luxe"
     }
   ];
 
-  const handleWhatsApp = (service) => {
-    const message = `Bonjour Dream Beauty Spa ! Je souhaite réserver un ${service} ✨`;
-    window.open(`https://wa.me/237670310388?text=${encodeURIComponent(message)}`, '_blank');
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/237670310338?text=Bonjour%20Dream%20Beauty%20%26%20Spa,%20je%20souhaite%20prendre%20rendez-vous`);
   };
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-pink-50">
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-500 to-pink-500">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Nos Services
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Découvrez notre gamme complète de soins beauté et bien-être, 
-            conçus pour révéler votre éclat naturel
+      <div className="relative pt-50 pb-28 bg-pink-900 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="relative z-10 container mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6">Nos Prestations d'Excellence</h1>
+          <p className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
+            Découvrez l'art du bien-être avec nos services haut de gamme, dispensés par des experts passionnés.
           </p>
         </div>
-      </section>
+      </div>
 
       {/* Services Grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid gap-12">
-            {services.map((category, index) => (
-              <div key={index} className="space-y-6">
-                <div className="text-center">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                    {category.category}
-                  </h2>
-                  <p className="text-lg text-gray-600">
-                    {category.description}
-                  </p>
-                </div>
-                
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {category.treatments.map((treatment, idx) => (
-                    <div key={idx} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-purple-100 p-6">
-                      <div className="pb-3">
-                        <h3 className="text-lg font-bold text-purple-600">
-                          {treatment.name}
-                        </h3>
-                      </div>
-                      <div className="pt-0">
-                        <p className="text-gray-600 mb-4 text-sm">
-                          {treatment.description}
-                        </p>
-                        <div className="space-y-3">
-                          <p className="font-semibold text-pink-500">
-                            {treatment.price}
-                          </p>
-                          <button 
-                            onClick={() => handleWhatsApp(treatment.name)}
-                            className="w-full p-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-600 hover:text-white transition-colors"
-                          >
-                            Réserver
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <div className="container mx-auto px-4 sm:px-6 py-16 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          {services.map((service) => (
+            <div 
+              key={service.id}
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+            >
+              <div className="h-60 overflow-hidden relative">
+                <img 
+                  src={service.image} 
+                  alt={service.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
-            ))}
-          </div>
+              <div className="p-6 md:p-8">
+                <h3 className="text-xl md:text-2xl font-serif font-semibold text-gray-800 mb-3 md:mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-50 to-pink-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-            Prêt(e) pour votre transformation beauté ?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Réservez dès maintenant votre soin et découvrez l'expérience Dream Beauty & Spa
+      <div className="bg-pink-800 text-white py-16 md:py-20">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-6">Prêt à vivre l'expérience Dream Beauty & Spa ?</h2>
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto">
+            Réservez dès maintenant votre moment de détente et de beauté.
           </p>
-          <button 
-            onClick={() => handleWhatsApp("consultation personnalisée")}
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 text-lg px-8 py-4 text-white rounded-md font-medium"
+          <button
+            onClick={handleWhatsAppClick}
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 md:py-4 md:px-8 rounded-full flex items-center mx-auto transition-all duration-300 transform hover:scale-105"
           >
-            Consultation Gratuite
+            <FaWhatsapp className="mr-2 text-xl md:text-2xl" />
+            <span className="text-base md:text-lg">Réserver via WhatsApp</span>
           </button>
+          <p className="mt-4 text-pink-200">670 31 03 38</p>
         </div>
-      </section>
+      </div>
 
+      {/* Luxury Note */}
+      <div className="py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-6 text-center max-w-5xl">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-gray-800 mb-6 md:mb-8">L'Excellence à Votre Service</h3>
+          <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed">
+            Chez <span className="font-semibold text-pink-700">Dream Beauty & Spa</span>, chaque détail compte. Nous sélectionnons avec soin les meilleurs produits et formons continuellement notre équipe pour vous offrir une expérience unique, alliant tradition et innovation.
+          </p>
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+            Dans un cadre épuré et raffiné, laissez-vous guider par nos experts pour un moment de pur bien-être où le luxe se mêle à l'authenticité.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Services;
+export default ServicesPage;

@@ -10,7 +10,7 @@ const Contact = () => {
     }, []);
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/237670310388?text=Bonjour%20Dream%20Beauty%20Spa%20!%20Je%20souhaite%20réserver%20un%20soin%20✨', '_blank');
+    window.open('https://wa.me/237670310338?text=Bonjour%20Dream%20Beauty%20Spa%20!%20Je%20souhaite%20réserver%20un%20soin%20✨', '_blank');
   };
 
   const handleSubmit = (e) => {
@@ -28,7 +28,7 @@ Message: ${message}
 
 Merci ! ✨`;
     
-    window.open(`https://wa.me/237670310388?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    window.open(`https://wa.me/237670310338?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
   };
 
   const contactInfo = [
