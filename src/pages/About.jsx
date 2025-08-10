@@ -13,32 +13,51 @@ const About = () => {
     window.open('https://wa.me/237670310388?text=Bonjour%20Dream%20Beauty%20Spa%20!%20Je%20souhaite%20en%20savoir%20plus%20sur%20votre%20salon%20✨', '_blank');
   };
 
-  const teamMembers = [
-    {
-      name: "Sarah Mballa",
-      role: "Directrice & Esthéticienne Senior",
-      experience: "15 ans d'expérience",
-      specialty: "Soins anti-âge et luminothérapie"
-    },
-    {
-      name: "Marie Ngo",
-      role: "Spécialiste Soins Visage",
-      experience: "8 ans d'expérience",
-      specialty: "Dermaplaning et soins purifiants"
-    },
-    {
-      name: "Fatima Oumar",
-      role: "Experte Hammam & Gommage",
-      experience: "12 ans d'expérience",
-      specialty: "Rituels orientaux traditionnels"
-    },
-    {
-      name: "Anabelle Toko",
-      role: "Manucure & Pédicure",
-      experience: "6 ans d'expérience",
-      specialty: "Nail art et soins des ongles"
-    }
-  ];
+const teamMembers = [
+  {
+    name: "Sandra",
+    role: "Esthéticienne Numéro 1",
+    experience: "10 ans d'expérience",
+    specialty: "Soins visage haut de gamme et massages relaxants"
+  },
+  {
+    name: "Patricia",
+    role: "Prothésiste Ongulaire",
+    experience: "7 ans d'expérience",
+    specialty: "Manucure, pédicure et nail art de luxe"
+  },
+  {
+    name: "Clarisse",
+    role: "Coiffeuse",
+    experience: "8 ans d'expérience",
+    specialty: "Tresses, coiffures femmes et poses lace frontale"
+  },
+  {
+    name: "Seraphine",
+    role: "Esthéticienne Masseuse",
+    experience: "9 ans d'expérience",
+    specialty: "Massages relaxants et hammam & gommage corporel"
+  },
+  {
+    name: "Christelle",
+    role: "Spécialiste Extensions de Cils & Micropigmentation",
+    experience: "6 ans d'expérience",
+    specialty: "Extensions de cils professionnelles et microblading"
+  },
+  {
+    name: "Jerry",
+    role: "Coiffeur",
+    experience: "5 ans d'expérience",
+    specialty: "Coiffures homme et coupe tendance"
+  },
+  {
+    name: "Megane",
+    role: "Esthéticienne Numéro 2",
+    experience: "4 ans d'expérience",
+    specialty: "Soin du visage et pédicure spa"
+  }
+];
+
 
   const values = [
     {

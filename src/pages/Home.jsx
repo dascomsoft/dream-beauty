@@ -210,7 +210,7 @@ const Home = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {[
         ['fas fa-hand-sparkles', 'Onglerie', 'Manucure, vernis gel, nail art haut de gamme pour des ongles sublimes.'],
-        ['fas fa-eye', 'Extension des Cils', 'Volume russe, cil à cil ou mixte pour un regard irrésistible.'],
+        ['fas fa-eye', 'Extension des Cils', 'Volume russe, cil à cil , classique ou hybride pour un regard irrésistible.'],
         ['fas fa-spa', 'Hammam & Gommage Corporel', 'Détente et purification complète avec hammam traditionnel et gommage au savon noir.'],
         ['fas fa-leaf', 'Soin de Visage', 'Nettoyage profond, hydratation et traitements éclat pour votre peau.'],
         ['fas fa-shoe-prints', 'Pédicure', 'Soin complet des pieds, hydratation et vernis longue tenue.'],

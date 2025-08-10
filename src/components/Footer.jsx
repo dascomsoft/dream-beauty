@@ -49,10 +49,10 @@ const Footer = () => {
             <ul className="space-y-2 text-background/80">
               <li>Soins de visage</li>
               <li>Manicure & Pédicure</li>
-              <li>Hammam & Gommage complet</li>
+              <li>Hammam & Gommage corporel</li>
               <li>Onglerie</li>
               <li>Extension de cils</li>
-              <li>Microblending</li>
+              <li>Micropigmentation</li>
               <li>Packs beauté</li>
             </ul>
           </div>
