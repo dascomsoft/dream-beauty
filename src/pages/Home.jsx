@@ -17,63 +17,70 @@ const Home = () => {
 
   const packsData = [
     {
-      title: "Pack Éclat Total",
+      title: "Pack 1",
       price: "15,000 F",
       color: "from-pink-500 to-pink-400",
       textColor: "text-pink-500",
       features: [
 
-        "Hammam 1",
         "Pose vernis gel main",
         "Pédicure chaude",
-        "Manucure complète",
-        "Savon noir",
-        "Gommage",
-        "Soin visage complet",
+        "Manicure",
+        "Hammam 1",
+        "Soin au savon noir",
+         "Hammam 2",
+        "Gommage éclaircissant",
+        "Soin de visage complet",
+        "Luminotherapie",
+        "Dermaplaning",
+
       ],
       link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%201%20à%2015000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
     },
     {
-      title: "Pack Détente Pure",
+      title: "Pack 2",
       price: "10,000 F",
       color: "from-amber-500 to-amber-400",
       textColor: "text-amber-500",
       features: [
-        "Hammam 2",
-        "Savon noir",
+        "Hammam 1",
+        "Soin au savon noir",
         "Gommage éclaircissant",
+         "Hammam 2",
         "Luminothérapie",
-        "Soin visage",
+        "Soin de visage complet",
         "Dermaplaning",
-        "Pédicure complète",
+        "Pédicure",
       ],
       link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%202%20à%2010000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
     },
     {
-      title: "Pack Relaxation",
+      title: "Pack 3",
       price: "8,500 F",
       color: "from-purple-500 to-purple-400",
       textColor: "text-purple-500",
       features: [
-        "Hammam 3",
-        "Savon noir",
-        "Gommage",
-        "Soin visage",
+        "Hammam 1",
+        "Soin au Savon noir",
+        "Hamman 2" ,
+        "Gommage éclaircissant",
+        "Soin de visage complet",
         "Dermaplaning",
         "Luminothérapie",
       ],
       link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%203%20à%208500%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
     },
     {
-      title: "Pack Découverte",
+      title: "Pack 4",
       price: "5,000 F",
       color: "from-blue-500 to-blue-400",
       textColor: "text-blue-500",
-      features: ["Hammam 4", "Savon noir", "Gommage", "Soin visage"],
+      features: ["Hammam 1", "Soin au Savon noir",  "Gommage éclaircissant", "Hamman 2" , "Soin de visage complet"],
       link: "https://wa.me/237670310338?text=Bonjour%20!%20Je%20veux%20le%20Pack%204%20à%205000%20F%20chez%20Dream%20Beauty%20&%20Spa%20💆‍♀️",
     },
+
     {
-      title: "Pack Visage & Pieds",
+      title: "Pack 5",
       price: "5,000 F",
       color: "from-teal-500 to-teal-400",
       textColor: "text-teal-500",
@@ -194,34 +201,39 @@ const Home = () => {
       </section>
 
       {/* Services */}
-      <section id="services" className="py-16 bg-rose-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-rose-800 mb-12">Nos Services Exclusifs</h2>
+<section id="services" className="py-16 bg-rose-50">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-rose-800 mb-12">
+      Nos Services Exclusifs
+    </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              ['fas fa-hand-sparkles', 'Soins des Mains', 'Manucure, vernis gel, soins nourrissants pour des mains parfaites.'],
-              ['fas fa-tint', 'Soins du Visage', 'Nettoyage profond, hydratation, dermaplaning et luminothérapie.'],
-              ['fas fa-umbrella-beach', 'Pédicure Chaude', 'Détente extrême avec notre pédicure chaude exclusive.'],
-              ['fas fa-fire', 'Hammam', 'Purification de la peau avec hammam traditionnel et savon noir.'],
-              ['fas fa-magic', 'Gommage', 'Élimination des cellules mortes pour une peau douce et éclatante.'],
-              ['fas fa-lightbulb', 'Luminothérapie', 'Traitements LED pour stimuler la production de collagène.'],
-            ].map(([icon, title, text], i) => (
-              <div key={i} className="bg-white p-6 rounded-lg shadow-md gallery-item">
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className={`${icon} text-rose-600 text-xl`}></i>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-rose-800 mb-2">{title}</h3>
-                    <p className="text-rose-700">{text}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        ['fas fa-hand-sparkles', 'Onglerie', 'Manucure, vernis gel, nail art haut de gamme pour des ongles sublimes.'],
+        ['fas fa-eye', 'Extension des Cils', 'Volume russe, cil à cil ou mixte pour un regard irrésistible.'],
+        ['fas fa-spa', 'Hammam & Gommage Corporel', 'Détente et purification complète avec hammam traditionnel et gommage au savon noir.'],
+        ['fas fa-leaf', 'Soin de Visage', 'Nettoyage profond, hydratation et traitements éclat pour votre peau.'],
+        ['fas fa-shoe-prints', 'Pédicure', 'Soin complet des pieds, hydratation et vernis longue tenue.'],
+        ['fas fa-pen', 'Microblending', 'Restructuration des sourcils pour un effet naturel et élégant.'],
+        ['fas fa-paint-brush', 'Manicure', 'Pose vernis, french manucure et soins réparateurs haut de gamme.'],
+      ].map(([icon, title, text], i) => (
+        <div key={i} className="bg-white p-6 rounded-lg shadow-md gallery-item">
+          <div className="flex items-start">
+            <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mr-4">
+              <i className={`${icon} text-rose-600 text-xl`}></i>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-rose-800 mb-2">{title}</h3>
+              <p className="text-rose-700">{text}</p>
+           
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Témoignages */}
       <section className="py-16 bg-white">
@@ -268,10 +280,10 @@ const Home = () => {
                 Nous utilisons exclusivement des produits bio certifiés, sans parabènes ni ingrédients nocifs...
               </p>
               <div className="flex space-x-4">
-                <a href="/services" className="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-full font-semibold transition">
+                <a href="/services" className="bg-rose-600 hover:bg-rose-700 text-white px-7 py-2 rounded-full font-semibold transition">
                   Nos services
                 </a>
-                <a href="/contact" className="border-2 border-rose-600 text-rose-600 px-10 py-2 rounded-full font-semibold hover:bg-rose-600 hover:text-white transition">
+                <a href="/contact" className="border-2 border-rose-600 text-rose-600 px-7 py-2 rounded-full font-semibold hover:bg-rose-600 hover:text-white transition">
                   Nous joindre
                 </a>
               </div>

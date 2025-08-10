@@ -28,7 +28,7 @@ const ServicesPage = () => {
       id: 1,
       title: "Massages Relaxants",
       description: "Détendez-vous avec nos massages professionnels aux huiles essentielles premium. Laissez nos thérapeutes expérimentés dissiper votre stress.",
-      image: "hero.jpg",
+      image: "gallery-3.jpg",
       alt: "Massage relaxant dans un spa luxueux"
     },
     {
@@ -86,7 +86,23 @@ const ServicesPage = () => {
       description: "Boutique exclusive de produits de beauté soigneusement sélectionnés. Des marques prestigieuses pour prolonger l'expérience spa à domicile.",
       image: "product.jpg",
       alt: "Produits cosmétiques de luxe"
-    }
+    },
+      {
+    title: "Massage Relaxant aux Pierres Chaudes",
+    description:
+      "Profitez d’un massage luxueux aux pierres chaudes pour apaiser vos muscles, améliorer la circulation et offrir une relaxation profonde.",
+    image:
+      "hero.jpg",
+  },
+
+ {
+    title: "Coiffure Pose Lace Frontale",
+    description:
+      "Mettez en valeur votre style avec notre pose lace frontale professionnelle, pour un look naturel et glamour adapté à toutes vos envies.",
+    image:
+      "poselace.jpg",
+  },
+
   ];
 
   const handleWhatsAppClick = () => {

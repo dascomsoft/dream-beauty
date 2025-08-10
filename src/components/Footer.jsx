@@ -47,11 +47,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-primary">Nos Services</h3>
             <ul className="space-y-2 text-background/80">
-              <li>Soins visage</li>
-              <li>Manucure & Pédicure</li>
-              <li>Hammam & Gommage</li>
-              <li>Luminothérapie</li>
-              <li>Dermaplaning</li>
+              <li>Soins de visage</li>
+              <li>Manicure & Pédicure</li>
+              <li>Hammam & Gommage complet</li>
+              <li>Onglerie</li>
+              <li>Extension de cils</li>
+              <li>Microblending</li>
               <li>Packs beauté</li>
             </ul>
           </div>
@@ -71,10 +72,6 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <FiPhone className="h-5 w-5 text-primary" />
                 <span>670 31 03 38</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <FiMail className="h-5 w-5 text-primary" />
-                <span>contact@dreambeautyspa.cm</span>
               </div>
             </div>
           </div>
