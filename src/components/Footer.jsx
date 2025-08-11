@@ -53,6 +53,8 @@ const Footer = () => {
               <li>Onglerie</li>
               <li>Extension de cils</li>
               <li>Micropigmentation</li>
+              <li>Coiffure femmes (tresses et pose lace frontale)</li>
+              <li>Coiffure hommes</li>
               <li>Packs beauté</li>
             </ul>
           </div>

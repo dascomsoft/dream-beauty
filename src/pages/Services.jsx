@@ -41,7 +41,7 @@ const ServicesPage = () => {
     {
       id: 3,
       title: "Onglerie Artistique",
-      description: "Des mains parfaitement manucurées avec nos techniques de nail art exclusives. Vernis semi-permanent, capsules ou french élégant.",
+      description: "Des mains parfaitement manucurées avec nos techniques de nail art exclusives. Vernis semi-permanent, capsules ou french élégant.Sans oublier les constructions gels , polygels , resines et gainages",
       image: "ong2.jpeg",
       alt: "Ongles artistiquement décorés"
     },
@@ -56,7 +56,7 @@ const ServicesPage = () => {
       id: 5,
       title: "Extensions de Cils",
       description: "Un regard intense et naturel avec nos extensions de cils premium, posées une à une par notre experte certifiée. Effet wow garanti.",
-      image: "cils4.jpg",
+      image: "ex1.jpg",
       alt: "Extensions de cils parfaites"
     },
     {
