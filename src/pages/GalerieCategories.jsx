@@ -51,7 +51,7 @@ const GalerieCategories = () => {
       images: ['/extensdream.jpg', '/extensdream1.jpg', 'extensdream2.jpg', 'extensdream3.jpg']
     },
     {
-      id: 'coiffures',
+      id: 'hommes',
       name: 'Coiffures',
       icon: <PiScissorsBold className="text-3xl" />,
       description: 'Coiffures et brushings',
