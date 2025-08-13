@@ -41,7 +41,7 @@ const GalerieCategories = () => {
       name: 'Pédicure',
       icon: <GiFootprint className="text-3xl" />,
       description: 'Soins des pieds professionnels',
-      images: ['/pedidream.jpg', '/pedidream1.jpg', '/pedidream2.jpg', '/pedidream3.jpg']
+      images: ['/pedidream.jpg', '/pedi1.jpeg', '/pedi.jpeg', '/pedidream3.jpg']
     },
     {
       id: 'extension-cils',
@@ -62,7 +62,7 @@ const GalerieCategories = () => {
       name: 'Tresses',
   icon: <GiFlowerEmblem className="text-3xl" />,
       description: 'Tresses africaines et coiffures protectrices',
-      images: ['/tressedream2.jpg', '/tressedream3.jpg', 'tressedream4.jpg', 'tressedream6.webp']
+      images: ['/tressy.jpeg', '/tressy1.jpeg', 'tressy2.jpeg', 'tressedream6.webp']
     },
     {
       id: 'nail-art',
@@ -113,7 +113,7 @@ const GalerieCategories = () => {
                 <img
                   src={image}
                   alt={`${category.name} ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>

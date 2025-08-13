@@ -53,8 +53,8 @@ Merci ! ✨`;
     {
       icon: FiMail,
       title: "Email",
-      value: "contact@dreambeautyspa.cm",
-      action: () => window.open('mailto:contact@dreambeautyspa.cm')
+      value: "dreambeautyspa856@gmail.com",
+      action: () => window.open('mailto:dreambeautyspa856@gmail.com')
     }
   ];
 
