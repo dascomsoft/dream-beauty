@@ -199,7 +199,7 @@ const Home = () => {
               ['fas fa-spa', 'Hammam & Gommage Corporel', 'Détente et purification complète avec hammam traditionnel et gommage au savon noir.'],
               ['fas fa-leaf', 'Soin de Visage', 'Nettoyage profond, hydratation et traitements éclat pour votre peau.'],
               ['fas fa-shoe-prints', 'Pédicure', 'Soin complet des pieds, hydratation et vernis longue tenue.'],
-              ['fas fa-pen', 'Microblanding', 'Restructuration des sourcils pour un effet naturel et élégant.'],
+              ['fas fa-pen', 'Microblading', 'Restructuration des sourcils pour un effet naturel et élégant.'],
               ['fas fa-paint-brush', 'Manicure', 'Pose vernis, french manucure et soins réparateurs haut de gamme.'],
             ].map(([icon, title, text], i) => (
               <div key={i} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 group">
